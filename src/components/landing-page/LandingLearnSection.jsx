@@ -30,7 +30,7 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import arrowBlack from '@public/assets/images/navbar/arrow-outward-black.svg';
+import arrow from '@public/assets/images/navbar/arrow-outward-black.svg';
 import arrowWhite from '@public/assets/images/navbar/arrow-outward-white.svg';
 import { useTheme } from 'next-themes';
 
@@ -43,7 +43,7 @@ const LandingLearnSection = () => {
     setIsThemeReady(true);
   }, [theme]);
 
-  const arrow = isThemeReady && theme === 'light' ? arrowWhite : arrowBlack;
+  // const arrow = isThemeReady && theme === 'light' ? arrowWhite : arrowBlack;
 
   const handleNavigation = (targetPath) => {
     setMenuOpen(false);

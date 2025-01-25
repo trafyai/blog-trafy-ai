@@ -5,14 +5,18 @@
   
     --h-font:'DM Sans', sans-serif;
     --p-font:'Inter', sans-serif;
-   --trafy-grey:#F5F5F5;
+   /* --trafy-grey:#F5F5F5; */
+    --trafy-grey:#2C2C2C;
+    --trafy-bg-black:#121212;
     --trafy-black:#000000;
     --trafy-white:#ffffff;
     --h-black:#000000;
     --p-black:#424242;
     --h-white:#ffffff;
     --p-white:#d1d1d1;
-    --box-border:#B2B2B2;
+    /* --box-border:#B2B2B2; */
+    --box-border:#5f5f5f;
+
 
 
   }

@@ -1,7 +1,7 @@
 'use client'
 import React,{useState, useEffect} from 'react'
 import '@styles/landing-page/LandingPage.css';
-import arrowBlack from '@public/assets/images/navbar/arrow-outward-black.svg';
+import arrow from '@public/assets/images/navbar/arrow-outward-black.svg';
 import arrowWhite from '@public/assets/images/navbar/arrow-outward-white.svg';
 import Image from 'next/image';
 // import { useTheme } from '@context/ThemeContext';
@@ -16,7 +16,7 @@ const LandingHeroSection = () => {
     setIsThemeReady(true);
   }, [theme]);
 
-    const arrow = isThemeReady && theme === 'light' ? arrowWhite: arrowBlack
+    // const arrow = isThemeReady && theme === 'light' ? arrowWhite: arrowBlack
   
   return (
     <div className='landing-hero'>

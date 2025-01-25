@@ -5,7 +5,7 @@
     align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--trafy-grey);
+    background-color: var(--trafy-black);
 }
 .footer-container{
     width:90%;
@@ -27,13 +27,13 @@
     gap: 1.3rem;
 }
 .footer-right-contents a, .footer-right-contents p{
-    color: var(--p-black);
+    color: var(--p-white);
     font-size: 16px;
     font-family: var(--h-font);
     text-decoration: none;
 }
 .footer-right-contents a:hover{
-    color: var(--h-black);
+    color: var(--h-white);
 }
 .footer-theme{
     display: flex;

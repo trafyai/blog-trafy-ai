@@ -83,15 +83,16 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import '@styles/navbar/Navbar.css';
 import logoBlack from '@public/assets/images/navbar/trafy-black-logo.png';
-import logoWhite from '@public/assets/images/navbar/trafy-white-logo.png';
-import arrowBlack from '@public/assets/images/navbar/arrow-outward-black.svg';
+import logoColor from '@public/assets/images/navbar/trafy-white-logo.png';
+import arrow from '@public/assets/images/navbar/arrow-outward-black.svg';
 import arrowWhite from '@public/assets/images/navbar/arrow-outward-white.svg';
 import hamburgerBlack from '@public/assets/images/navbar/hamburger-black.svg';
 import closeBlack from '@public/assets/images/navbar/close-black.svg';
-import hamburgerWhite from '@public/assets/images/navbar/hamburger-white.svg';
-import closeWhite from '@public/assets/images/navbar/close-white.svg';
+import hamburgerIcon from '@public/assets/images/navbar/hamburger-white.svg';
+import closeIcon from '@public/assets/images/navbar/close-white.svg';
 // import { useTheme } from '@context/ThemeContext';
 import { useTheme } from 'next-themes';
 
@@ -105,18 +106,18 @@ const Navbar = () => {
     setIsThemeReady(true);
   }, [theme]);
 
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setMenuOpen(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleOutsideClick = (event) => {
+  //     if (menuRef.current && !menuRef.current.contains(event.target)) {
+  //       setMenuOpen(false);
+  //     }
+  //   };
 
-    document.addEventListener('mousedown', handleOutsideClick);
-    return () => {
-      document.removeEventListener('mousedown', handleOutsideClick);
-    };
-  }, []);
+  //   document.addEventListener('mousedown', handleOutsideClick);
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleOutsideClick);
+  //   };
+  // }, []);
 
   const handleNavigation = (targetPath) => {
     setMenuOpen(false);
@@ -130,22 +131,21 @@ const Navbar = () => {
       window.location.href = targetPath;
     } else {
       document.body.classList.remove('overflow');
-      // Assuming router.push() logic here
     }
   };
 
-  // Select icons based on the current theme
-  const hamburgerIcon = isThemeReady && theme === 'light' ? hamburgerBlack : hamburgerWhite;
-  const closeIcon = isThemeReady && theme=== 'light' ? closeBlack : closeWhite;
-  const logoColor = isThemeReady && theme === 'light' ? logoBlack : logoWhite;
-  const arrow = isThemeReady && theme=== 'light' ? arrowWhite: arrowBlack
+  // // Select icons based on the current theme
+  // const hamburgerIcon = isThemeReady && theme === 'light' ? hamburgerBlack : hamburgerWhite;
+  // const closeIcon = isThemeReady && theme=== 'light' ? closeBlack : closeWhite;
+  // const logoColor = isThemeReady && theme === 'light' ? logoBlack : logoWhite;
+  // const arrow = isThemeReady && theme=== 'light' ? arrowWhite: arrowBlack
 
   return (
     <div className="navbar">
       <div className="navbar-container" ref={menuRef}>
-        <div className="navbar-logo" onClick={() => handleNavigation('/')}>
+        <Link href='/' className="navbar-logo">
           <Image src={logoColor} alt="trafy logo" />
-        </div>
+        </Link>
 
         <div className="navbar-contents">
           <div className="navbar-research" onClick={() => handleNavigation('/')}>
@@ -167,13 +167,8 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-contents-menu">
-          <Image
-            src={menuOpen ? closeIcon : hamburgerIcon}
-            alt={menuOpen ? 'close-icon' : 'hamburger-icon'}
-            width={24}
-            height={24}
-            onClick={() => setMenuOpen(!menuOpen)}
-          />
+          <Image src={menuOpen ? closeIcon : hamburgerIcon} alt={menuOpen ? 'close-icon' : 'hamburger-icon'}
+            width={24} height={24} onClick={() => setMenuOpen(!menuOpen)}/>
         </div>
       </div>
       <div className={`navbar-contents-drop ${menuOpen ? 'open' : ''}`}>

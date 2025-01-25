@@ -130,7 +130,7 @@ const Footer = () => {
           </div>
           <div className="footer-right-contents">
             <p>© 2025, trafy</p>
-            <div className="footer-theme">
+            {/* <div className="footer-theme">
               <p>Theme</p>
               <div
                 className="theme-change-button"
@@ -139,7 +139,7 @@ const Footer = () => {
                 <span className={`light-theme ${theme === 'light' ? 'active' : ''}`}></span>
                 <span className={`dark-theme ${theme === 'dark' ? 'active' : ''}`}></span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

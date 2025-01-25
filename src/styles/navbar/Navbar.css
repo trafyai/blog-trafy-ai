@@ -7,7 +7,7 @@
     width: 100%;
     position: sticky;
     top: 0;
-    background-color: var(--trafy-white);
+    background-color: var(--trafy-black);
     /* background-color: rgba(255, 255, 255, 0.45);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(15px); */
@@ -36,23 +36,23 @@
 .navbar-community{
     font-size: 16px;
     font-weight: 400;
-    color: var(--p-black);
+    color: var(--p-white);
     font-family: var(--h-font);
 }
 .navbar-research:hover ,.navbar-academy:hover, .navbar-resources:hover,
 .navbar-community:hover{
-    color: var(--h-black);
+    color: var(--h-white);
 }
 .navbar-button{
     padding: 8px 18px;
     width: max-content;
     height: max-content;
-    border: 1px solid var(--h-black);
+    border: 1px solid var(--h-white);
     border-radius: 8px;
-    background-color: var(--h-black);
+    background-color: var(--h-white);
     font-size: 16px;
     font-weight: 400;
-    color: var(--h-white);
+    color: var(--h-black);
     font-family: var(--h-font);
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: var(--trafy-white);
+        background-color: var(--trafy-black);
         z-index: 1000;
  
             /* backdrop-filter: blur(10px);
@@ -102,9 +102,9 @@
     }
     .navbar-research ,.navbar-academy, .navbar-resources,
 .navbar-community{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
-    color: var(--h-black);
+    color: var(--h-white);
     font-family: var(--h-font);
 }
 }
