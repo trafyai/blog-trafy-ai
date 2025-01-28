@@ -160,10 +160,10 @@ const Navbar = () => {
           <div className="navbar-community" onClick={() => handleNavigation('/')}>
             Community
           </div>
-          <div className="navbar-button">
+          <Link href='/beta' className="navbar-button">
             Join Beta
             <Image src={arrow} alt="chat-icon" width={16} height={16} />
-          </div>
+          </Link>
         </div>
 
         <div className="navbar-contents-menu">
