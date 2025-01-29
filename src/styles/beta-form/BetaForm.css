@@ -98,7 +98,7 @@
   }
   
   /* Button */
-  button[type="submit"] {
+  .beta-form-user-contents button{
     background-color: var(--trafy-white);
     color: var(--h-black);
     padding: 10px 15px;
@@ -107,6 +107,15 @@
     border-radius: 4px;
     cursor: pointer;
   }
+  /* button[type="submit"] {
+    background-color: var(--trafy-white);
+    color: var(--h-black);
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid var(--trafy-white);
+    border-radius: 4px;
+    cursor: pointer;
+  } */
 
   .beta-form-contents{
     display: flex;
