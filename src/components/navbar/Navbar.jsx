@@ -160,8 +160,8 @@ const Navbar = () => {
           <div className="navbar-community" onClick={() => handleNavigation('/')}>
             Community
           </div>
-          <Link href='/beta' className="navbar-button">
-            Join Beta
+          <Link href='http://app.trafy.ai/' className="navbar-button">
+            Try trafy
             <Image src={arrow} alt="chat-icon" width={16} height={16} />
           </Link>
         </div>
