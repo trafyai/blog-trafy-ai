@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 277 163">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: Poppins-SemiBold, Poppins;
+        font-size: 111.48px;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <g>
+    <text class="cls-2" transform="translate(1 95.81) scale(.97 1)"><tspan x="0" y="0">t</tspan></text>
+    <text class="cls-2" transform="translate(42.2 95.81) scale(.97 1)"><tspan x="0" y="0">r</tspan></text>
+    <text class="cls-2" transform="translate(85.77 95.81) scale(.97 1)"><tspan x="0" y="0">a</tspan></text>
+    <text class="cls-2" transform="translate(160.03 95.81) scale(.97 1)"><tspan x="0" y="0">f</tspan></text>
+    <text class="cls-2" transform="translate(199.8 95.89) scale(.97 1)"><tspan x="0" y="0">y</tspan></text>
+  </g>
+  <ellipse class="cls-1" cx="267.16" cy="86.82" rx="8.84" ry="8.97"/>
+</svg>
