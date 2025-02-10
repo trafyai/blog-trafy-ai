@@ -30,6 +30,7 @@ const LandingResearchSection = () => {
       <div className="landing-research-container">
         <div className="landing-research-left">
           <h2>Research</h2>
+          <p>Innovative research driving AI advancements through self-learning, security, rapid deployment, and seamless networking.</p>
         </div>
         <div className="landing-research-right">
           {LandingResearchData.map((data) => (

@@ -34,7 +34,7 @@
 }
 .navbar-research ,.navbar-academy, .navbar-resources,
 .navbar-community{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     color: var(--p-white);
     font-family: var(--h-font);
@@ -50,7 +50,7 @@
     border: 1px solid var(--h-white);
     border-radius: 8px;
     background-color: var(--h-white);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     color: var(--h-black);
     font-family: var(--h-font);
