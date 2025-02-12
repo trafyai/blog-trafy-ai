@@ -1,6 +1,6 @@
-import Twitter from '@public/assets/Images/blog/social/twitter.png';
-import Linkedin from '@public/assets/Images/blog/social/linkedin.png';
-import Facebook from '@public/assets/Images/blog/social/facebook.png';
+import Twitter from '@public/assets/images/blog/social/twitter.png';
+import Linkedin from '@public/assets/images/blog/social/linkedin.png';
+import Facebook from '@public/assets/images/blog/social/facebook.png';
 const ResearchData = [
     {
         id: "evolve-intelligence-transmutable-resilient-ai",

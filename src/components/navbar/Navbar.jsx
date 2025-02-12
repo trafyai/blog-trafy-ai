@@ -3,9 +3,12 @@ import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import '@styles/navbar/Navbar.css';
-
+import logoBlack from '@public/assets/images/navbar/trafy-black-logo.png';
 import logoColor from '@public/assets/images/navbar/trafy-white-logo.png';
-
+import arrow from '@public/assets/images/navbar/arrow-outward-black.svg';
+import arrowWhite from '@public/assets/images/navbar/arrow-outward-white.svg';
+import hamburgerBlack from '@public/assets/images/navbar/hamburger-black.svg';
+import closeBlack from '@public/assets/images/navbar/close-black.svg';
 import hamburgerIcon from '@public/assets/images/navbar/hamburger-white.svg';
 import closeIcon from '@public/assets/images/navbar/close-white.svg';
 import { useRouter } from "next/navigation";

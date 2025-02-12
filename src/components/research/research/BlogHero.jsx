@@ -1,10 +1,10 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import share from '@public/assets/Images/blog/social/share-white.svg';
-import Twitter from '@public/assets/Images/blog/social/twitter.png';
-import Linkedin from '@public/assets/Images/blog/social/linkedin.png';
-import Facebook from '@public/assets/Images/blog/social/facebook.png';
+import share from '@public/assets/images/blog/social/share-white.svg';
+import Twitter from '@public/assets/images/blog/social/twitter.png';
+import Linkedin from '@public/assets/images/blog/social/linkedin.png';
+import Facebook from '@public/assets/images/blog/social/facebook.png';
 
 const BlogHero = (props) => {
   const [open, setOpen] = useState(false);

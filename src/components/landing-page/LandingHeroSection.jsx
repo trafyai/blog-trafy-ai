@@ -2,6 +2,7 @@
 import React,{useState, useEffect} from 'react'
 import '@styles/landing-page/LandingPage.css';
 import arrow from '@public/assets/images/navbar/arrow-outward-black.svg';
+import arrowWhite from '@public/assets/images/navbar/arrow-outward-white.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 // import { useTheme } from '@context/ThemeContext';
