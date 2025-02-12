@@ -2,6 +2,7 @@ import '@styles/globals.css';
 import Navbar from '@components/navbar/Navbar';
 import Footer from '@components/footer/Footer';
 import Head from 'next/head';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 export const viewport = {
@@ -64,17 +65,7 @@ export default function RootLayout({ children }) {
         />
 
         {/* Google Analytics (GA4) */}
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B6WQRNGHL"></script>
-  <script
-    dangerouslySetInnerHTML={{
-      __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-0B6WQRNGHL');
-      `
-    }}
-  />
+
         <script
           dangerouslySetInnerHTML={{
             __html: `!function(f,b,e,v,n,t,s)
@@ -96,6 +87,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer/>
         {/* </ThemeProvider> */}
+        <GoogleAnalytics gaId="G-0B6WQRNGHL" />
       </body>
     </html>
   );
