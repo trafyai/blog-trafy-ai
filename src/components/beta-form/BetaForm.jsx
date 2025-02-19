@@ -66,8 +66,8 @@ const BetaForm = () => {
     <div className='beta-form'>
       <div className='beta-form-container'>
         <div className='beta-form-headline'>
-          <h2>Join Our AI Beta Community</h2>
-          <p>Subscribe to receive newsletters, research papers, and blogs about our AI innovations.</p>
+          <h2>Get Started with Trafy AI</h2>
+          <p>Enter your details to start leveraging AI automation for smarter and faster business growth.</p>
         </div>
         <form onSubmit={handleSubmit} className='beta-form-user-contents'>
           <div className='beta-form-fullname'>
@@ -128,18 +128,18 @@ const BetaForm = () => {
               onChange={handleChange}
             />
           </div>
-          <button type="submit">Join Beta</button>
+          <button type="submit">Submit</button>
         </form>
 
         {/* Popup Message */}
         {isPopupVisible && (
           <div className='popup'>
-            <p>Thanks for Joining Our AI Beta Community !</p>
+            <p>Thanks for Signing up!</p>
           </div>
         )}
 
         <div className='beta-form-contents'>
-          <p>By joining, you’ll get exclusive access to our latest updates, cutting-edge research, and expert insights into AI advancements.</p>
+          {/* <p>By joining, you’ll get exclusive access to our latest updates, cutting-edge research, and expert insights into AI advancements.</p> */}
           <p>Your information will remain private and secure as per our <a href="/privacy-policy">Privacy Policy</a>.</p>
         </div>
       </div>

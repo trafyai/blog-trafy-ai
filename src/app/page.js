@@ -4,7 +4,7 @@ import LandingResearchSection from "@components/landing-page/LandingResearchSect
 import LandingSolutionSection from "@components/landing-page/LandingSolutionSection";
 import LandingLearnSection from "@components/landing-page/LandingLearnSection";
 import LandingCommunitySection from "@components/landing-page/LandingCommunitySection";
-
+import LandingBusinessSection from "@components/landing-page/LandingBusinessSection";
 
 export const metadata= {
   title: "trafy - Privacy first Resilient AI at scale",
@@ -53,6 +53,7 @@ export default function Home() {
   <LandingHeroSection/>
   <LandingResearchSection/>
   <LandingSolutionSection/>
+  <LandingBusinessSection/>
   <LandingLearnSection/>
   <LandingCommunitySection/>
   </>

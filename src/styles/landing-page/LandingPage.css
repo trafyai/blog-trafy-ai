@@ -540,6 +540,121 @@
         padding-bottom: 40px;
     }
 }
+/* ---------------------------------------------------------------Landing- Business------------------------------------------------- */
+.landing-business{
+    padding-top: 110px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--trafy-bg-black);
+}
+.landing-business-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.landing-business-container h2{
+    font-size: 48px;
+    font-family: var(--h-font);
+    font-weight: 500;
+    color: var(--h-white);
+    text-align: center;
+}
+.landing-business-container p{
+    width: 60%;
+    font-size: 22px;
+    font-family: var(--h-font);
+    font-weight: 400;
+    color: var(--p-white);
+    text-align: center;
+    line-height: 160%;
+}
+.landing-business-badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.landing-business-container span{
+    padding: 6px 12px;
+    border: 1px solid #313131;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: var(--h-font);
+    font-weight: 400;
+    color: var(--p-white);
+    text-align: center;
+}
+.landing-business-container a{
+    margin-top: 14px;
+    padding: 14px 28px;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--h-white);
+    font-size: 18px;
+    font-family: var(--h-font);
+    font-weight: 300;
+    color: var(--h-black);
+    text-decoration: none;
+}
+@media only screen and (max-width:1024px){
+    .landing-business-container{
+        width: 90%;
+    }
+    .landing-business-container h2{
+        font-size: 44px;
+    }
+}
+@media only screen and (max-width:600px){
+    .landing-business{
+        padding: 60px 0px;
+    }
+    .landing-business-container{
+        width: 90%;
+    }
+    .landing-business-container h2{
+        font-size: 38px;
+    }
+    .landing-business-container p{
+        font-size: 18px;
+        width: 100%;
+    }
+    .landing-business-container span{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:6850px){
+    .landing-business{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+}
+@media only screen and (max-width:400px){
+    .landing-business{
+        padding: 40px 0px;
+    }
+    .landing-business-container{
+        justify-content: flex-start;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    .landing-business-container h2{
+        font-size: 34px;
+        text-align: left;
+    }
+    .landing-business-container p{
+        text-align: left;
+    }
+    .landing-business-badges{
+        justify-content: flex-start;
+        gap: 0.7rem;
+    }
+}
 /* ----------------------------------------------------------------Landing Community-------------------------------------------------- */
 
 .landing-community{
