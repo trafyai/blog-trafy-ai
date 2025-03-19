@@ -5,6 +5,7 @@ import share from '@public/assets/images/blog/social/share-white.svg';
 import Twitter from '@public/assets/images/blog/social/twitter.png';
 import Linkedin from '@public/assets/images/blog/social/linkedin.png';
 import Facebook from '@public/assets/images/blog/social/facebook.png';
+import { MdOutlineShare } from "react-icons/md";
 
 const BlogHero = (props) => {
   const [open, setOpen] = useState(false);
@@ -50,7 +51,42 @@ const BlogHero = (props) => {
     <div>
       <section className="blog-page-hero-section">
         <div className="blog-page-hero-section-category">
-          <p className="blog-page-hero-category">{props.category}</p>
+          <p className="blog-page-hero-category">{props.category}           
+            <MdOutlineShare
+            className='blog-share-mobile'
+            alt="share"
+            style={{width:"16px",height:"16px",color:"#797979"}}
+            onClick={() => setOpen(!open)}
+          />
+                    {open && (
+            <div className="blog-page-hero-share-container-mobile" ref={shareRef}>
+              <Image
+                src={Linkedin}
+                alt="Linkedin"
+                onClick={shareToLinkedIn}
+                className="blog-social-b"
+                width={28}
+                height={28}
+              />
+              <Image
+                src={Facebook}
+                alt="Facebook"
+                onClick={shareToFacebook}
+                className="blog-social-b"
+                width={28}
+                height={28}
+              />
+              <Image
+                src={Twitter}
+                alt="Twitter"
+                onClick={shareToTwitter}
+                className="blog-social-b"
+                width={28}
+                height={28}
+              />
+            </div>
+          )}
+          </p>
         </div>
 
         <div className="blog-page-hero-section-heading">
@@ -69,11 +105,10 @@ const BlogHero = (props) => {
             <span style={{ color: '#d1d1d1' }}>|</span>
             <p >{props.read}</p>
           </div>
-          <Image
-            src={share}
+          <MdOutlineShare
+            className='blog-share'
             alt="share"
-            width={28}
-            height={28}
+            style={{width:"20px",height:"20px",color:"#797979"}}
             onClick={() => setOpen(!open)}
           />
           {open && (

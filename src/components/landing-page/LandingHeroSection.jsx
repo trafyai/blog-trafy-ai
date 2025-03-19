@@ -2,7 +2,7 @@
 import React,{useState, useEffect} from 'react'
 import '@styles/landing-page/LandingPage.css';
 import arrow from '@public/assets/images/navbar/arrow-outward-black.svg';
-import arrowWhite from '@public/assets/images/navbar/arrow-outward-white.svg';
+import { HiMiniArrowUpRight } from "react-icons/hi2";
 import Image from 'next/image';
 import Link from 'next/link';
 // import { useTheme } from '@context/ThemeContext';
@@ -26,7 +26,7 @@ const LandingHeroSection = () => {
             <p>Build for Easy Agent Development</p>
             <Link href='http://app.trafy.ai/' className='landing-hero-button'>
                 Try trafy
-                <Image src={arrow} alt='chat-icon' width={20} height={20}/>
+                <HiMiniArrowUpRight style={{width:"24px",height:"24px",color:"var(--h-white)"}} />
             </Link>
         </div>
     </div>

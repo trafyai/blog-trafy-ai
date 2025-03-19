@@ -46,7 +46,7 @@ const LandingResearchSection = () => {
           {LandingResearchData.map((data) => (
             <div className="landing-research-right-box" key={data.id}>
             <div className="landing-research-right-box-heading">
-              <Image src={data.img} />
+              <Image src={data.img} alt={data.title}/>
               <h3>{data.title}</h3>
             </div>  
               <p>{data.description}</p>

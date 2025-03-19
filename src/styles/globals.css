@@ -8,12 +8,14 @@
    /* --trafy-grey:#F5F5F5; */
     --trafy-grey:#2C2C2C;
     --trafy-bg-black:#0a0a0a;
+    --trafy-bg-white:#ffffff;
+
     --trafy-black:#0a0a0a;
     --trafy-white:#e3e3e3;
     --h-black:#0a0a0a;
     --p-black:#424242;
-    --h-white:#e3e3e3;
-    --p-white:#90909d;
+    --h-white:#fefefe;
+    --p-white:#e7e7e7;
     --p-blog-white:#bcbcc2;
     --box-border:#5f5f5f;
 

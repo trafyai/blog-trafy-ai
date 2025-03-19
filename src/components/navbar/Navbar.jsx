@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import '@styles/navbar/Navbar.css';
 import logoBlack from '@public/assets/images/navbar/trafy-black-logo.png';
-import logoColor from '@public/assets/images/navbar/trafy-white-logo.png';
+import logoColor from '@public/assets/images/navbar/trafy-black-logo.png';
 import arrow from '@public/assets/images/navbar/arrow-outward-black.svg';
 import arrowWhite from '@public/assets/images/navbar/arrow-outward-white.svg';
 import hamburgerBlack from '@public/assets/images/navbar/hamburger-black.svg';
@@ -12,6 +12,9 @@ import closeBlack from '@public/assets/images/navbar/close-black.svg';
 import hamburgerIcon from '@public/assets/images/navbar/hamburger-white.svg';
 import closeIcon from '@public/assets/images/navbar/close-white.svg';
 import { useRouter } from "next/navigation";
+import { MdOutlineMenu } from "react-icons/md";
+import { IoMdClose } from "react-icons/io";
+import { HiMiniArrowUpRight } from "react-icons/hi2";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -72,8 +75,11 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-contents-menu">
-          <Image src={menuOpen ? closeIcon : hamburgerIcon} alt={menuOpen ? 'close-icon' : 'hamburger-icon'}
-            width={24} height={24} onClick={() => setMenuOpen(!menuOpen)}/>
+         {!menuOpen && <MdOutlineMenu  alt={menuOpen ? 'close-icon' : 'hamburger-icon'}
+          onClick={() => setMenuOpen(!menuOpen)} style={{color:"#6c6c6c",width:"24px",height:"24px"}}/>}
+          {menuOpen &&  <IoMdClose alt={menuOpen ? 'close-icon' : 'hamburger-icon'}   width={40} height={40} onClick={() => setMenuOpen(!menuOpen)}
+            style={{color:"#6c6c6c",width:"24px",height:"24px"}}/>}
+
         </div>
       </div>
       <div className={`navbar-contents-drop ${menuOpen ? 'open' : ''}`}>
@@ -87,6 +93,10 @@ const Navbar = () => {
           <div className="navbar-community" onClick={() => handleNavigation('/')}>
             Community
           </div>
+          <Link href='http://app.trafy.ai/' className="navbar-button">
+            Signup
+            <HiMiniArrowUpRight style={{width:"20px",height:"20px",color:"var(--p-black)"}} />
+          </Link>
         </div>
       </div>
     </div>

@@ -3,19 +3,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 48px;
     width: 100%;
     position: sticky;
     top: 0;
-    background-color: var(--trafy-black);
+    background-color: var(--trafy-bg-white);
     /* background-color: rgba(255, 255, 255, 0.45);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(15px); */
     z-index: 1000; /* Ensure the navbar stays on top */
     /* border-bottom: 1px solid #1e1e1e; */
+    border-bottom: 1px solid #ffffff;
+
 }
 .navbar.scrolled {
-    border-bottom: 1px solid #1e1e1e;
+    border-bottom: 1px solid #eeeeee;
 
   }
 .navbar-container{
@@ -29,7 +31,7 @@
     align-items: center;
 }
 .navbar-logo img{
-    height: 28px;
+    height: 26px;
     width: auto;
 }
 .navbar-contents{
@@ -41,27 +43,31 @@
 .navbar-community{
     font-size: 15px;
     font-weight: 400;
-    color: var(--p-white);
+    color: var(--p-black);
     font-family: var(--h-font);
 }
 .navbar-research:hover ,.navbar-academy:hover, .navbar-resources:hover,
 .navbar-community:hover{
-    color: var(--h-white);
+    color: var(--h-black);
 }
 .navbar-button{
-    padding: 8px 18px;
+    padding: 7px 18px;
     width: max-content;
     height: max-content;
-    border: 1px solid var(--h-white);
+    border: 1px solid var(--h-black);
     border-radius: 8px;
-    background-color: var(--h-white);
+    background-color: var(--h-black);
     font-size: 15px;
     font-weight: 400;
-    color: var(--h-black);
+    color: var(--h-white);
     font-family: var(--h-font);
     display: flex;
     align-items: center;
     gap: 0.3rem;
+}
+.navbar-button:hover{
+    border: 1px solid #3c3c3c;
+    background-color: #3c3c3c;   
 }
 .navbar-contents-menu,  .navbar-contents-drop{
     display: none;
@@ -76,7 +82,8 @@
         display: none;
     }
     .navbar-contents-menu{
-        display: block;
+        display: flex;
+        align-items: center;
     }
     .navbar-contents-drop{
         display: none;
@@ -88,9 +95,9 @@
         display: flex;
         justify-content: center;
         position: absolute;
-        top: 60px;
+        top: 47px;
         right: 0;
-        background-color: var(--trafy-black);
+        background-color: var(--trafy-bg-white);
         z-index: 1000;
  
             /* backdrop-filter: blur(10px);
@@ -111,9 +118,19 @@
     }
     .navbar-research ,.navbar-academy, .navbar-resources,
 .navbar-community{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
-    color: var(--h-white);
+    color: var(--h-black);
     font-family: var(--h-font);
+}
+.navbar-button{
+font-size: 20px;
+font-weight: 400;
+color: var(--h-black);
+font-family: var(--h-font);
+gap: 0.3rem;
+background-color: inherit;
+border: 0px;
+padding: 0px;
 }
 }

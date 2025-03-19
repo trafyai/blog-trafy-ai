@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--trafy-bg-black);
+    background-color: var(--trafy-bg-white);
 }
 .landing-hero-container{
     width: 80%;
@@ -19,7 +19,7 @@
     font-size: 68px;
     font-family: var(--h-font);
     font-weight: 500;
-    color: var(--h-white);
+    color: var(--h-black);
     line-height: 140%;
     text-align: center;
 }
@@ -28,7 +28,7 @@
     font-size: 24px;
     font-family: var(--h-font);
     font-weight: 400;
-    color: var(--p-white);
+    color: var(--p-black);
     line-height: 150%;
     text-align: center;
 }
@@ -37,18 +37,21 @@
     padding: 16px 24px;
     width: max-content;
     height: max-content;
-    border: 1px solid var(--h-white);
+    border: 1px solid var(--h-black);
     border-radius: 8px;
-    background-color: var(--h-white);
+    background-color: var(--h-black);
     font-size: 22px;
     font-weight: 300;
-    color: var(--h-black);
+    color: var(--h-white);
     font-family: var(--h-font);
     display: flex;
     align-items: center;
     gap: 0.7rem;
 }
-
+.landing-hero-button:hover{
+    background-color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+}
 @media only screen and (max-width:1280px){
     .landing-hero-container h1{
         width: 70%;
@@ -106,7 +109,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--trafy-bg-black);
+    background-color: var(--trafy-bg-white);
 }
 .landing-research-container{
     width: 80%;
@@ -124,14 +127,14 @@
     font-size: 48px;
     font-family: var(--h-font);
     font-weight: 500;
-    color: var(--h-white);
+    color: var(--h-black);
 }
 .landing-research-left p{
     width: 50%;
     font-size: 20px;
     font-family: var(--h-font);
     font-weight: 400;
-    color: var(--p-white);
+    color: var(--p-black);
     line-height: 140%;
 
 }
@@ -145,8 +148,8 @@
     flex-direction: column;
     gap: 0.5rem;
     padding: 24px;
-    background-color: #0e0e0e;
-    border: 2px solid #2b2b2b;
+    background-color: #fbfbfb;
+    border: 1px solid #e1e1e1;
     border-radius: 12px
 }
 .landing-research-right-box-heading{
@@ -162,13 +165,13 @@
     font-size: 21px;
     font-family: var(--h-font);
     font-weight: 500;
-    color: var(--h-white);
+    color: var(--h-black);
 }
 .landing-research-right-box p{
     font-size: 17px;
     font-family: var(--h-font);
     font-weight: 400;
-    color: var(--p-white);
+    color: var(--p-black);
 }
 @media only screen and (max-width:1300px){
     .landing-research-container{
@@ -265,7 +268,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--trafy-bg-black);
+    background-color: var(--trafy-bg-white);
 }
 .landing-solution-container{
     width: 80%;
@@ -281,7 +284,7 @@
     font-size: 48px;
     font-family: var(--h-font);
     font-weight: 500;
-    color: var(--h-white);
+    color: var(--h-black);
     line-height: 150%;
 }
 .landing-solution-right{
@@ -297,13 +300,13 @@
     justify-content: center;
     align-items: center;
     /* background-color: #191919; */
-    border: 2px solid #313131;
+    border: 1px solid #e1e1e1;
 }
 .landing-solution-box h3{
     font-size: 24px;
     font-family: var(--h-font);
     font-weight: 400;
-    color: var(--h-white);
+    color: var(--p-black);
 }
 
 @media only screen and (max-width:1200px){
@@ -392,7 +395,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--trafy-bg-black);
+    background-color: var(--trafy-bg-white);
 }
 .landing-learn-container{
     width: 80%;
@@ -421,7 +424,7 @@
     font-size: 15px;
     font-family: var(--h-font);
     font-weight: 400;
-    color: var(--p-white);
+    color: var(--p-black);
     line-height: 150%;
 }
 .landing-learn-container h2{
@@ -429,7 +432,7 @@
     font-size: 40px;
     font-family: var(--h-font);
     font-weight: 500;
-    color: var(--h-white);
+    color: var(--h-black);
     line-height: 150%;
 }
 .landing-learn-container p{
@@ -437,7 +440,7 @@
     font-size: 18px;
     font-family: var(--h-font);
     font-weight: 400;
-    color: var(--p-white);
+    color: var(--p-black);
     line-height: 150%;
 }
 .landing-learn-container span{
@@ -445,7 +448,7 @@
     font-size: 15px;
     font-family: var(--h-font);
     font-weight: 400;
-    color: var(--p-white);
+    color: var(--p-black);
     line-height: 150%;
     text-decoration: underline;
 }
@@ -453,9 +456,9 @@
     padding: 16px 24px;
     width: max-content;
     height: max-content;
-    border: 1px solid var(--h-white);
+    border: 1px solid var(--h-black);
     border-radius: 8px;
-    background-color: var(--h-white);
+    background-color: var(--h-black);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -547,7 +550,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--trafy-bg-black);
+    background-color: var(--trafy-bg-white);
 }
 .landing-business-container{
     width: 80%;
@@ -561,7 +564,7 @@
     font-size: 48px;
     font-family: var(--h-font);
     font-weight: 500;
-    color: var(--h-white);
+    color: var(--h-black);
     text-align: center;
 }
 .landing-business-container p{
@@ -569,7 +572,7 @@
     font-size: 22px;
     font-family: var(--h-font);
     font-weight: 400;
-    color: var(--p-white);
+    color: var(--p-black);
     text-align: center;
     line-height: 160%;
 }
@@ -581,12 +584,12 @@
 }
 .landing-business-container span{
     padding: 6px 12px;
-    border: 1px solid #313131;
+    border: 1px solid #e1e1e1;
     border-radius: 10px;
     font-size: 20px;
     font-family: var(--h-font);
     font-weight: 400;
-    color: var(--p-white);
+    color: var(--p-black);
     text-align: center;
 }
 .landing-business-container a{
@@ -595,12 +598,15 @@
     height: auto;
     border: none;
     border-radius: 10px;
-    background-color: var(--h-white);
+    background-color: var(--h-black);
     font-size: 18px;
     font-family: var(--h-font);
     font-weight: 300;
-    color: var(--h-black);
+    color: var(--h-white);
     text-decoration: none;
+}
+.landing-business-container a:hover{
+background-color: #3c3c3c;
 }
 @media only screen and (max-width:1024px){
     .landing-business-container{
@@ -663,7 +669,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--trafy-bg-black);
+    background-color: var(--trafy-bg-white);
 }
 .landing-community-container{
     width: 50%;
@@ -677,7 +683,7 @@
     font-size: 48px;
     font-family: var(--h-font);
     font-weight: 500;
-    color: var(--h-white);
+    color: var(--h-black);
     text-align: center;
 }
 .landing-community-container p{
@@ -685,7 +691,7 @@
     font-size: 22px;
     font-family: var(--h-font);
     font-weight: 400;
-    color: var(--p-white);
+    color: var(--p-black);
     text-align: center;
     line-height: 160%;
 }
@@ -699,20 +705,20 @@
     width: 90%;
     display: flex;
     align-items: center;
-    border: 1px solid var(--box-border);
+    border: 1px solid #e1e1e1;
     border-radius: 12px;
-    background-color: var(--trafy-grey);
+    background-color: #fbfbfb;
 }
 .landing-community-input input{
     width: 100%;
     padding: 14px;
     border: none;
     border-radius: 12px;
-    background-color: var(--trafy-grey);
+    background-color: #fbfbfb;
     font-size: 18px;
     font-family: var(--h-font);
     font-weight: 400;
-    color: var(--p-white);
+    color: var(--p-black);
 }
 .landing-community-input input:focus{
     outline: none;
@@ -722,19 +728,21 @@
     height: auto;
     border: none;
     border-radius: 12px;
-    background-color: var(--h-white);
+    background-color: var(--h-black);
     font-size: 18px;
     font-family: var(--h-font);
     font-weight: 300;
-    color: var(--h-black);
+    color: var(--h-white);
 }
-
+.landing-community-input button:hover{
+    background-color: #3c3c3c;
+}
 .popup {
     position: fixed;
     top: 20px;
     right: 20px;
     padding: 15px;
-    background-color: var(--h-white);
+    background-color: var(--h-black);
     color: var(--trafy-black);
     border-radius: 8px;
     font-size: 16px;

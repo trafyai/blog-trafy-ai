@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: var(--trafy-black);
+    background-color: var(--trafy-bg-white);
   }
   
   .beta-form-container {
@@ -27,14 +27,14 @@
   .beta-form-headline h2 {
     font-size: 26px;
     font-family: var(--h-font);
-    color: var(--h-white);
+    color: var(--h-black);
     font-weight: 500;
   }
   
   .beta-form-headline p {
     font-size: 16px;
     font-family: var(--p-font);
-    color: var(--p-white);
+    color: var(--p-black);
     font-weight: 400;
     line-height: 150% ;
   }
@@ -63,8 +63,9 @@
     border-radius: 4px;
     font-size: 14px;
     outline: none;
-    background-color: var(--trafy-grey);
-    color: var(--p-white);
+    background-color: #fafafa;
+    border: 1px solid #eeeeee;
+    color: var(--p-black);
   }
   
   
@@ -82,7 +83,7 @@
     align-items: center;
     font-size: 13px;
     font-family: var(--p-font);
-    color: var(--p-white);
+    color: var(--p-black);
   }
   
   .beta-form-checkbox-newsletter input {
@@ -99,13 +100,15 @@
   
   /* Button */
   .beta-form-user-contents button{
-    background-color: var(--trafy-white);
-    color: var(--h-black);
+    background-color: var(--trafy-black);
+    color: var(--h-white);
     padding: 10px 15px;
     font-size: 16px;
-    border: 1px solid var(--trafy-white);
+    border: 1px solid var(--trafy-black);
     border-radius: 4px;
     cursor: pointer;
+    font-family: var(--p-font);
+    font-weight: 400;
   }
   /* button[type="submit"] {
     background-color: var(--trafy-white);
@@ -124,7 +127,7 @@
   }
   .beta-form-contents p{
     font-size: 13px;
-    color: var(--p-white);
+    color: var(--p-black);
     font-weight: 400;
     font-family: var(--p-font);
     line-height: 140%;
@@ -144,7 +147,8 @@
     top: 20px;  /* Adjusts the distance from the top */
     right: 20px;  /* Adjusts the distance from the right */
     padding: 10px 12px;
-    background-color: var(--h-white);
+    background-color: #fafafa;
+    border: 1px solid #eeeeee;
     color: var(--trafy-black);
     border-radius: 8px;
     font-size: 15px;
