@@ -4,6 +4,7 @@ import BlogHero from "./research/BlogHero";
 import BlogIntroduction from "./research/BlogIntroduction";
 import ResearchArticle from "./research/ResearchArticle";
 import BlogConclusion from "./research/BlogConclusion";
+import BlogNewsletter from './research/BlogNewsletter';
 
 export default function BlogPage(props) {
 
@@ -17,6 +18,7 @@ export default function BlogPage(props) {
               <BlogIntroduction {...props} />
               <ResearchArticle {...props}/>
               <BlogConclusion {...props} />
+              <BlogNewsletter/>
             </div>
         </div>
 
