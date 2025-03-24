@@ -16,7 +16,7 @@ const BlogNewsletter = () => {
   
     try {
       // ✅ Send email to backend
-      const response = await fetch("http://localhost:5000/api/sendEmail", {
+      const response = await fetch("https://trafy-newbackend.vercel.app/api/sendEmail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
