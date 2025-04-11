@@ -5,7 +5,7 @@ import db from "@firebase"; // Assuming you have this Firebase configuration fil
 import '@styles/blog/BlogLanding.css';
 import Link from "next/link";
 import Image from "next/image";
-import logo from '@public/assets/images/navbar/moonshot_text_wh.png';
+import logo from '@public/assets/images/navbar/Moonshot_text_wh.png';
 
 export default function BlogLanding() {
     const [blogs, setBlogs] = useState([]);
