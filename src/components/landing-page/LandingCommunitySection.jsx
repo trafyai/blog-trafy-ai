@@ -19,7 +19,7 @@ const LandingCommunitySection = () => {
     };
 
     // Send the data to Firebase Realtime Database (community.json)
-    fetch(`https://trafyapp-auth-default-rtdb.firebaseio.com/community.json`, {
+    fetch(`https://apitesting-6694b-default-rtdb.firebaseio.com/community.json`, {
       method: 'POST', // Using POST to add a new entry under community.json
       headers: {
         'Content-Type': 'application/json',
