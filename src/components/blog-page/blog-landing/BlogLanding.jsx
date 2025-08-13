@@ -43,6 +43,7 @@ export default function BlogLanding() {
     return (
         <main>
             <div className="blog-landing-page">
+                <div className='flex container min-h-[100px] w-full'></div>
                 <div className="blog-landing-container">
 
 
