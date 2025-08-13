@@ -59,6 +59,9 @@ const Navbar = () => {
         </Link>
 
         <div className="navbar-contents">
+          <div className="navbar-research" onClick={() => handleNavigation('/blogs')}>
+            Blogs
+          </div>
           <div className="navbar-research" onClick={() => handleNavigation('/research/evolve-intelligence-transmutable-resilient-ai')}>
             Research
           </div>
@@ -84,6 +87,9 @@ const Navbar = () => {
       </div>
       <div className={`navbar-contents-drop ${menuOpen ? 'open' : ''}`}>
         <div className="navbar-contents-mobile">
+          <div className="navbar-research" onClick={() => handleNavigation('/blogs')}>
+            Blogs
+          </div>
           <div className="navbar-research" onClick={() => handleNavigation('/research/evolve-intelligence-transmutable-resilient-ai')}>
             Research
           </div>

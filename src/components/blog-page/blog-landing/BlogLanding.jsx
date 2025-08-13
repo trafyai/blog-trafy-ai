@@ -43,10 +43,6 @@ export default function BlogLanding() {
     return (
         <main>
             <div className="blog-landing-page">
-                <div className="blog-landing-header">
-                    <Image src={logo} alt="moonshot" />
-                    <p>Daily Dose of Tech Success Stories</p>
-                </div>
                 <div className="blog-landing-container">
 
 
@@ -99,7 +95,7 @@ export default function BlogLanding() {
                                 </div>
                             ))
                         ) : (
-                            blogs.slice(0, 7).map((item) => (
+                            blogs.map((item) => (
                                 <div className="blog-landing-card" key={item.id}>
                                     <Link href={`/moonshot/${item.id}`} className="blog-landing-card-inner">
                                         <div className="blog-landing-card-image">
