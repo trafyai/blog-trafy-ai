@@ -98,7 +98,7 @@ export default function BlogLanding() {
                         ) : (
                             blogs.map((item) => (
                                 <div className="blog-landing-card" key={item.id}>
-                                    <Link href={`/moonshot/${item.id}`} className="blog-landing-card-inner">
+                                    <Link href={`/blogs/${item.id}`} className="blog-landing-card-inner">
                                         <div className="blog-landing-card-image">
                                             <Image src={item.metaImage} alt="blog image" width={300} height={200} />
                                         </div>
