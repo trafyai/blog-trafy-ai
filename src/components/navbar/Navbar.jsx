@@ -59,18 +59,18 @@ const Navbar = () => {
         </Link>
 
         <div className="navbar-contents">
-          <div className="navbar-research" onClick={() => handleNavigation('/blogs')}>
+          {/* <div className="navbar-research" onClick={() => handleNavigation('/blogs')}>
             Blogs
           </div>
           <div className="navbar-research" onClick={() => handleNavigation('/research/evolve-intelligence-transmutable-resilient-ai')}>
             Research
           </div>
-          {/* <div className="navbar-resources" onClick={() => handleNavigation('https://blog.trafy.ai/')}>
+          <div className="navbar-resources" onClick={() => handleNavigation('https://blog.trafy.ai/')}>
             Resources
-          </div> */}
+          </div>
           <div className="navbar-community" onClick={() => handleNavigation('/')}>
             Community
-          </div>
+          </div> */}
           <Link href='http://app.trafy.ai/' className="navbar-button">
             Signup
             {/* <Image src={arrow} alt="chat-icon" width={16} height={16} /> */}

@@ -1,10 +1,5 @@
 import React from "react";
-import LandingHeroSection from "@components/landing-page/LandingHeroSection";
-import LandingResearchSection from "@components/landing-page/LandingResearchSection";
-import LandingSolutionSection from "@components/landing-page/LandingSolutionSection";
-import LandingLearnSection from "@components/landing-page/LandingLearnSection";
-import LandingCommunitySection from "@components/landing-page/LandingCommunitySection";
-import LandingBusinessSection from "@components/landing-page/LandingBusinessSection";
+import BlogLanding from "@components/blog-page/blog-landing/BlogLanding";
 
 export const metadata= {
   title: "trafy - Privacy first Resilient AI at scale",
@@ -50,12 +45,7 @@ export const metadata= {
 export default function Home() {
   return (
   <>
-  <LandingHeroSection/>
-  <LandingResearchSection/>
-  <LandingSolutionSection/>
-  <LandingBusinessSection/>
-  <LandingLearnSection/>
-  <LandingCommunitySection/>
+  <BlogLanding />
   </>
   );
 }
